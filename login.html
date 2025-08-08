@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PLACE IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>PLACE IA</h1>
+                <div class="slogan">Impulsão + IA + Gestão para Marketplaces</div>
+            </div>
+        </header>
+        
+        <main class="app-content">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Acesso à Plataforma</h2>
+                    <p>Escolha o tipo de acesso para continuar</p>
+                </div>
+                
+                <div class="login-options">
+                    <div class="login-option" id="client-login-option">
+                        <div class="login-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Acesso Cliente</h3>
+                        <p>Para vendedores e usuários da plataforma</p>
+                        <button class="login-option-btn" onclick="window.location.href='login-cliente.html'">Acessar</button>
+                    </div>
+                    
+                    <div class="login-option" id="admin-login-option">
+                        <div class="login-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Acesso Administrador</h3>
+                        <p>Para equipe interna e administradores</p>
+                        <button class="login-option-btn" onclick="window.location.href='login-admin.html'">Acessar</button>
+                    </div>
+                </div>
+                
+                <div class="login-footer">
+                    <p>Não tem uma conta? <a href="#" class="trial-link">Experimente grátis por 7 dias</a></p>
+                    <p><a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PLACE IA</h3>
+                    <p>A primeira plataforma brasileira que une impulsão com inteligência artificial + gestão automatizada para vendedores de marketplaces.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@placeai.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-headset"></i> Suporte 24/7</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Acesse</h3>
+                    <p><i class="fas fa-desktop"></i> Programa (Windows)</p>
+                    <p><i class="fas fa-mobile-alt"></i> Aplicativo (Android/iOS)</p>
+                    <p><i class="fas fa-globe"></i> Plataforma Web</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <p><i class="fas fa-info-circle"></i> Sobre nós</p>
+                    <p><i class="fas fa-file-alt"></i> Termos de uso</p>
+                    <p><i class="fas fa-shield-alt"></i> Privacidade</p>
+                    <p><i class="fas fa-question-circle"></i> FAQ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PLACE IA - Todos os direitos reservados</p>
+                <p>Criado por Anderson - Fundador com mais de 20 anos no mercado</p>
+                <p class="founder-quote">"Não é só uma empresa. É um sonho de 5 anos. Quem comeu ovo comigo, vai estar no banquete."</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

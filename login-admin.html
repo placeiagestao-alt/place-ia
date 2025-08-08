@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrador - PLACE IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>PLACE IA</h1>
+                <div class="slogan">Impulsão + IA + Gestão para Marketplaces</div>
+            </div>
+        </header>
+        
+        <main class="app-content">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Acesso Administrador</h2>
+                    <p>Área restrita para equipe interna e administradores</p>
+                </div>
+                
+                <div class="login-form-container">
+                    <form id="admin-login-form" class="login-form">
+                        <div class="form-group">
+                            <label for="admin-email"><i class="fas fa-envelope"></i></label>
+                            <input type="email" id="admin-email" placeholder="E-mail corporativo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="admin-password"><i class="fas fa-lock"></i></label>
+                            <input type="password" id="admin-password" placeholder="Senha" required>
+                            <button type="button" class="toggle-password" data-target="admin-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="admin-token"><i class="fas fa-key"></i></label>
+                            <input type="text" id="admin-token" placeholder="Token de autenticação" required>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-admin">
+                                <label for="remember-admin">Lembrar-me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        </div>
+                        
+                        <button type="submit" class="login-button">Entrar</button>
+                        
+                        <div class="admin-note">
+                            <p><i class="fas fa-info-circle"></i> O acesso administrativo é monitorado e registrado por questões de segurança.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="login-footer">
+                    <p><a href="login.html" class="back-link"><i class="fas fa-arrow-left"></i> Voltar para opções de login</a></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PLACE IA</h3>
+                    <p>A primeira plataforma brasileira que une impulsão com inteligência artificial + gestão automatizada para vendedores de marketplaces.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@placeai.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-headset"></i> Suporte 24/7</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Acesse</h3>
+                    <p><i class="fas fa-desktop"></i> Programa (Windows)</p>
+                    <p><i class="fas fa-mobile-alt"></i> Aplicativo (Android/iOS)</p>
+                    <p><i class="fas fa-globe"></i> Plataforma Web</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <p><i class="fas fa-info-circle"></i> Sobre nós</p>
+                    <p><i class="fas fa-file-alt"></i> Termos de uso</p>
+                    <p><i class="fas fa-shield-alt"></i> Privacidade</p>
+                    <p><i class="fas fa-question-circle"></i> FAQ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PLACE IA - Todos os direitos reservados</p>
+                <p>Criado por Anderson - Fundador com mais de 20 anos no mercado</p>
+                <p class="founder-quote">"Não é só uma empresa. É um sonho de 5 anos. Quem comeu ovo comigo, vai estar no banquete."</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

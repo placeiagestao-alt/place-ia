@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACE IA - Plataforma de Gestão para Marketplaces</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>PLACE IA</h1>
+                <p class="slogan">Nos importamos com quem importa.</p>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-item active"><i class="fas fa-home"></i> Início</button>
+                <button class="nav-item"><i class="fas fa-chart-line"></i> Dashboard</button>
+                <button class="nav-item"><i class="fas fa-store"></i> Minha Loja</button>
+                <button class="nav-item"><i class="fas fa-robot"></i> TaTa IA</button>
+                <button class="nav-item"><i class="fas fa-cog"></i> Configurações</button>
+            </nav>
+            <div class="user-profile">
+                <a href="login.html" class="login-button-nav"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+            </div>
+        </header>
+        
+        <main class="app-content">
+            <section class="welcome-section">
+                <h2>Bem-vindo à Place IA</h2>
+                <p>A primeira plataforma brasileira que une impulsão com inteligência artificial + gestão automatizada para vendedores de marketplaces.</p>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Impulsão Automática</h3>
+                        <p>IA cria títulos, descrições, imagens e publica nos marketplaces. Baseada em análises de mercado, concorrência e padrões de sucesso.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Gestão Automatizada</h3>
+                        <p>Estoque atualizado por Excel, foto ou arquivo padrão. Análise de vendas por hora, dia, semana, mês e ano.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>TaTa IA Interativa</h3>
+                        <p>Assistente virtual para responder suas perguntas sobre vendas, produtos e performance em tempo real.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="marketplace-section">
+                <h2>Marketplaces Integrados</h2>
+                <div class="marketplace-logos">
+                    <div class="marketplace-logo">Mercado Livre</div>
+                    <div class="marketplace-logo">Shopee</div>
+                    <div class="marketplace-logo">Amazon</div>
+                    <div class="marketplace-logo">Magalu</div>
+                    <div class="marketplace-logo">Americanas</div>
+                </div>
+            </section>
+
+            <section class="dashboard-preview">
+                <h2>Prévia do Dashboard</h2>
+                <div class="dashboard-container">
+                    <div class="dashboard-card sales-card">
+                        <h3><i class="fas fa-shopping-cart"></i> Vendas Hoje</h3>
+                        <p class="dashboard-value">R$ 2.450,00</p>
+                        <p class="dashboard-trend positive"><i class="fas fa-arrow-up"></i> 25% vs. ontem</p>
+                    </div>
+                    <div class="dashboard-card products-card">
+                        <h3><i class="fas fa-box"></i> Produtos Ativos</h3>
+                        <p class="dashboard-value">68</p>
+                        <p class="dashboard-trend positive"><i class="fas fa-arrow-up"></i> 12 novos produtos</p>
+                    </div>
+                    <div class="dashboard-card performance-card">
+                        <h3><i class="fas fa-chart-line"></i> Performance</h3>
+                        <p class="dashboard-value">92%</p>
+                        <p class="dashboard-trend positive"><i class="fas fa-arrow-up"></i> 8% esta semana</p>
+                    </div>
+                    <div class="dashboard-card visitors-card">
+                        <h3><i class="fas fa-users"></i> Visitantes</h3>
+                        <p class="dashboard-value">1.245</p>
+                        <p class="dashboard-trend positive"><i class="fas fa-arrow-up"></i> 18% esta semana</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tata-section">
+                <h2>Converse com a TaTa</h2>
+                <div class="tata-container">
+                    <div class="tata-chat">
+                        <div class="tata-message tata-message-ai">
+                            <div class="tata-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tata-bubble">
+                                Olá! Sou a TaTa, sua assistente virtual. Como posso ajudar você hoje?
+                            </div>
+                        </div>
+                        <div class="tata-message tata-message-user">
+                            <div class="tata-bubble">
+                                TaTa, quantas vendas eu fiz ontem no Mercado Livre?
+                            </div>
+                            <div class="tata-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="tata-message tata-message-ai">
+                            <div class="tata-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tata-bubble">
+                                Parabéns, chefe! Ontem você fez 8 vendas no Mercado Livre, totalizando R$ 945,30. Isso representa um aumento de 12% em relação ao mesmo dia da semana passada!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tata-input">
+                        <input type="text" placeholder="Faça uma pergunta para a TaTa..." id="tataInput">
+                        <button id="tataSendBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="trial-section">
+                <div class="trial-info">
+                    <h2>Experimente Grátis por 7 Dias</h2>
+                    <p>Teste todas as funcionalidades da Place IA sem compromisso. Você só paga se gostar!</p>
+                    <div class="plans-container">
+                        <div class="plan-card">
+                            <h3>Grátis</h3>
+                            <p class="plan-price">R$ 0,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Cadastro automático por nota fiscal (até 5 notas/mês)</li>
+                                <li><i class="fas fa-check"></i> 1 integração com marketplace</li>
+                                <li><i class="fas fa-check"></i> Acesso a relatórios básicos</li>
+                                <li><i class="fas fa-times"></i> Sem impulsionamento de anúncios</li>
+                            </ul>
+                            <button class="plan-button" data-plan="free">Começar Grátis</button>
+                        </div>
+                        <div class="plan-card">
+                            <h3>Essencial</h3>
+                            <p class="plan-price">R$ 97,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 20 notas fiscais inclusas</li>
+                                <li><i class="fas fa-check"></i> Até 3 marketplaces conectados</li>
+                                <li><i class="fas fa-check"></i> Impulsionamento básico de anúncios</li>
+                                <li><i class="fas fa-check"></i> Otimização básica de anúncios com IA</li>
+                            </ul>
+                            <button class="plan-button" data-plan="essential">Selecionar</button>
+                        </div>
+                        <div class="plan-card featured">
+                            <div class="plan-badge">Mais Popular</div>
+                            <h3>Plus</h3>
+                            <p class="plan-price">R$ 197,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 100 notas fiscais inclusas</li>
+                                <li><i class="fas fa-check"></i> Até 4 marketplaces conectados</li>
+                                <li><i class="fas fa-check"></i> Impulsionamento completo com IA</li>
+                                <li><i class="fas fa-check"></i> Otimização completa de catálogo</li>
+                                <li><i class="fas fa-check"></i> Dashboard com filtros e relatórios por marketplace</li>
+                            </ul>
+                            <button class="plan-button" data-plan="plus">Selecionar</button>
+                        </div>
+                        <div class="plan-card">
+                            <h3>Escala</h3>
+                            <p class="plan-price">R$ 297,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 150 notas fiscais inclusas</li>
+                                <li><i class="fas fa-check"></i> Até 10 marketplaces conectados</li>
+                                <li><i class="fas fa-check"></i> Relatórios inteligentes com IA</li>
+                                <li><i class="fas fa-check"></i> Análises avançadas de catálogo e concorrência</li>
+                                <li><i class="fas fa-check"></i> Criação de campanhas automáticas segmentadas</li>
+                            </ul>
+                            <button class="plan-button" data-plan="scale">Selecionar</button>
+                        </div>
+                        <div class="plan-card">
+                            <h3>Supreme</h3>
+                            <p class="plan-price">R$ 497,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 300 notas fiscais inclusas (custo por nossa conta)</li>
+                                <li><i class="fas fa-check"></i> Marketplaces ilimitados</li>
+                                <li><i class="fas fa-check"></i> Impulsionamento com IA e orçamento flexível</li>
+                                <li><i class="fas fa-check"></i> Análise automática de concorrentes</li>
+                                <li><i class="fas fa-check"></i> Análise de precificação e sugestão de lucro</li>
+                            </ul>
+                            <button class="plan-button" data-plan="supreme">Selecionar</button>
+                        </div>
+                        <div class="plan-card premium">
+                            <div class="plan-badge">Premium</div>
+                            <h3>Ilimitado</h3>
+                            <p class="plan-price">R$ 997,00<span>/mês</span></p>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Notas ilimitadas (custo por nossa conta)</li>
+                                <li><i class="fas fa-check"></i> Marketplaces ilimitados</li>
+                                <li><i class="fas fa-check"></i> Impulsionamento com IA e orçamento flexível</li>
+                                <li><i class="fas fa-check"></i> Análise automática de concorrentes</li>
+                                <li><i class="fas fa-check"></i> Análise de precificação e sugestão de lucro</li>
+                                <li><i class="fas fa-check"></i> Suporte preferencial e dedicado</li>
+                            </ul>
+                            <button class="plan-button" data-plan="unlimited">Selecionar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Comece seu teste gratuito agora</h3>
+                        <form id="trial-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <select id="marketplace" required>
+                                    <option value="" disabled selected>Marketplace principal</option>
+                                    <option value="mercado-livre">Mercado Livre</option>
+                                    <option value="shopee">Shopee</option>
+                                    <option value="amazon">Amazon</option>
+                                    <option value="magalu">Magalu</option>
+                                    <option value="americanas">Americanas</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="cta-button">Começar Teste Gratuito</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PLACE IA</h3>
+                    <p>A primeira plataforma brasileira que une impulsão com inteligência artificial + gestão automatizada para vendedores de marketplaces.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@placeai.com.br</p>
+                    <p><i class="fas fa-phone"></i> (18)99653-1491</p>
+                    <p><i class="fas fa-headset"></i> Suporte 24/7</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pres. Prudente S.P</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Acesse</h3>
+                    <p><i class="fas fa-desktop"></i> Programa (Windows)</p>
+                    <p><i class="fas fa-mobile-alt"></i> Aplicativo (Android/iOS)</p>
+                    <p><i class="fas fa-globe"></i> Plataforma Web</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <p><i class="fas fa-info-circle"></i> Sobre nós</p>
+                    <p><i class="fas fa-file-alt"></i> Termos de uso</p>
+                    <p><i class="fas fa-shield-alt"></i> Privacidade</p>
+                    <p><i class="fas fa-question-circle"></i> FAQ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PLACE IA - Todos os direitos reservados</p>
+                <p>Criado por Anderson - Fundador com mais de 20 anos no mercado</p>
+                <p class="founder-quote">"Não é só uma empresa. É um sonho de 5 anos. Quem comeu ovo comigo, vai estar no banquete."</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
