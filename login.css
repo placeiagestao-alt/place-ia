@@ -85,7 +85,8 @@
 }
 
 .login-option-btn:hover {
-    background-color: #6b0000; /* Vermelho mais escuro */
+    background-color: #0FF0FC; /* azul claro */
+
 }
 
 /* Formulário de login */
@@ -172,7 +173,7 @@
 }
 
 .login-button:hover {
-    background-color: #6b0000; /* Vermelho mais escuro */
+    background-color: #0FF0FC; /* azul claro */
 }
 
 /* Login social */
