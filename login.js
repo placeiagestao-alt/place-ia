@@ -1,4 +1,5 @@
-// Elementos DOM para as páginas de login
+
+e// Elementos DOM para as páginas de login
 document.addEventListener('DOMContentLoaded', function() {
     // Botões para alternar visibilidade da senha
     const togglePasswordButtons = document.querySelectorAll('.toggle-password');
@@ -22,26 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Formulário de login do cliente
     const clientLoginForm = document.getElementById('client-login-form');
     if (clientLoginForm) {
-        clientLoginForm.addEventListener('submit', function(e) {
+        clientLoginForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const email = document.getElementById('client-email').value;
             const password = document.getElementById('client-password').value;
             const rememberMe = document.getElementById('remember-client').checked;
             
-            // Simulação de validação e login
-            if (email && password) {
-                // Aqui você implementaria a chamada real para a API de autenticação
-                console.log('Login de cliente:', { email, password, rememberMe });
+            try {
+                const response = await window.PlaceIA.auth.login(email, password, 'client');
                 
-                // Simulação de login bem-sucedido
-                showLoginMessage('cliente', true);
-                
-                // Redirecionamento após login (simulado)
-                setTimeout(() => {
-                    window.location.href = 'dashboard-cliente.html'; // Página de destino após login
-                }, 1500);
-            } else {
+                if (response.success) {
+                    showLoginMessage('cliente', true);
+                    
+                    setTimeout(() => {
+                        window.location.href = 'dashboard-cliente.html';
+                    }, 1500);
+                } else {
+                    showLoginMessage('cliente', false);
+                }
+            } catch (error) {
+                console.error('Erro no login:', error);
                 showLoginMessage('cliente', false);
             }
         });
@@ -50,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Formulário de login do administrador
     const adminLoginForm = document.getElementById('admin-login-form');
     if (adminLoginForm) {
-        adminLoginForm.addEventListener('submit', function(e) {
+        adminLoginForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const email = document.getElementById('admin-email').value;
@@ -58,19 +60,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const token = document.getElementById('admin-token').value;
             const rememberMe = document.getElementById('remember-admin').checked;
             
-            // Simulação de validação e login
-            if (email && password && token) {
-                // Aqui você implementaria a chamada real para a API de autenticação
-                console.log('Login de administrador:', { email, password, token, rememberMe });
+            try {
+                const response = await window.PlaceIA.auth.login(email, password, 'admin', token);
                 
-                // Simulação de login bem-sucedido
-                showLoginMessage('admin', true);
-                
-                // Redirecionamento após login (simulado)
-                setTimeout(() => {
-                    window.location.href = 'dashboard-admin.html'; // Página de destino após login
-                }, 1500);
-            } else {
+                if (response.success) {
+                    showLoginMessage('admin', true);
+                    
+                    setTimeout(() => {
+                        window.location.href = 'dashboard-admin.html';
+                    }, 1500);
+                } else {
+                    showLoginMessage('admin', false);
+                }
+            } catch (error) {
+                console.error('Erro no login do administrador:', error);
                 showLoginMessage('admin', false);
             }
         });
@@ -136,15 +139,15 @@ loginMessageStyles.textContent = `
     }
     
     .login-message.success {
-        background-color: #d4edda;
-        color: #155724;
-        border: 1px solid #c3e6cb;
+        background-color: #00BFFF;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
     }
     
     .login-message.error {
-        background-color: #f8d7da;
-        color: #721c24;
-        border: 1px solid #f5c6cb;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: 2px solid #00BFFF;
     }
     
     .login-message i {

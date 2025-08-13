@@ -1,0 +1,131 @@
+/* Reset básico */
+body {
+    background-color: #000; /* preto bem escuro */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #00e6ff; /* azul neon */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: #00e6ff; /* azul neon */
+}
+
+/* Botões gerais */
+button, .btn {
+    background-color: transparent;
+    color: #00e6ff;
+    border: 2px solid #00e6ff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+button:hover, .btn:hover {
+    background-color: #00e6ff;
+    color: #000;
+    border-color: #00e6ff;
+    box-shadow: 0 0 15px #00e6ff;
+}
+
+/* Botão de login azul */
+.btn-login {
+    background-color: #00e6ff;
+    color: #000;
+    border: none;
+}
+.btn-login:hover {
+    background-color: #00b2cc;
+}
+
+/* Cards ou blocos */
+.card, .dashboard-card {
+    background-color: #111;
+    border: 1px solid #00e6ff;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 10px #00e6ff44;
+}
+
+/* Inputs */
+input, select, textarea {
+    background-color: #111;
+    border: 1px solid #00e6ff;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+input::placeholder {
+    color: #66ffff;
+}
+
+/* Cabeçalho e rodapé */
+header, footer {
+    background-color: #000; /* fundo preto escuro */
+    color: #00e6ff; /* azul neon */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #00e6ff88 inset;
+}
+
+/* Logo image */
+.logo-image {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* Navegação principal */
+.main-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.main-nav .nav-item {
+    background: transparent;
+    border: none;
+    color: #00e6ff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav .nav-item.active,
+.main-nav .nav-item:hover {
+    background-color: #00e6ff22;
+}
+
+/* Login button nav */
+.login-button-nav {
+    color: #00e6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-button-nav:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé app-footer */
+.app-footer {
+    background-color: #000;
+    color: #00e6ff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}

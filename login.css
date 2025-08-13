@@ -1,13 +1,24 @@
 /* Estilos específicos para as páginas de login */
 
+/* Variáveis CSS */
+:root {
+    --primary-color: #00BFFF; /* Azul neon */
+    --secondary-color: #00BFFF; /* Azul neon */
+    --accent-color: #00BFFF; /* Azul neon */
+    --light-color: #FFFFFF; /* Branco */
+    --neutral-color: #FFFFFF; /* Branco */
+    --background-color: #000000; /* Preto */
+}
+
 /* Container principal de login */
 .login-container {
     max-width: 900px;
     margin: 20px auto;
-    background-color: var(--light-color);
+    background-color: #00BFFF;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    border: 2px solid #FFFFFF;
 }
 
 /* Cabeçalho da página de login */
@@ -18,12 +29,12 @@
 
 .login-header h2 {
     font-size: 28px;
-    color: var(--primary-color);
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .login-header p {
-    color: var(--neutral-color);
+    color: #FFFFFF;
     font-size: 16px;
 }
 
@@ -40,42 +51,43 @@
     flex: 1;
     min-width: 250px;
     max-width: 350px;
-    background-color: var(--accent-color);
+    background-color: #000000;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 2px solid #FFFFFF;
 }
 
 .login-option:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    border-color: var(--primary-color);
+    border-color: #00BFFF;
+    background-color: #00BFFF;
 }
 
 .login-icon {
     font-size: 48px;
-    color: var(--primary-color);
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 .login-option h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: var(--secondary-color);
+    color: #FFFFFF;
 }
 
 .login-option p {
-    color: var(--neutral-color);
+    color: #FFFFFF;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
 .login-option-btn {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color: #00BFFF;
+    color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -85,8 +97,9 @@
 }
 
 .login-option-btn:hover {
-    background-color: #0FF0FC; /* azul claro */
-
+    background-color: #FFFFFF;
+    color: #00BFFF
+    ;
 }
 
 /* Formulário de login */
@@ -110,20 +123,22 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--neutral-color);
+    color: #FFFFFF;
 }
 
 .form-group input {
     width: 100%;
     padding: 15px 15px 15px 45px;
-    border: 1px solid #ddd;
+    border: 2px solid #FFFFFF;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .form-group input:focus {
-    border-color: var(--primary-color);
+    border-color: #00BFFF;
     outline: none;
 }
 
@@ -134,7 +149,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: var(--neutral-color);
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -149,10 +164,11 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #FFFFFF;
 }
 
 .forgot-password {
-    color: var(--primary-color);
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -161,8 +177,8 @@
 }
 
 .login-button {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color: #00BFFF;
+    color: #FFFFFF;
     border: none;
     padding: 15px;
     border-radius: 5px;
@@ -173,7 +189,9 @@
 }
 
 .login-button:hover {
-    background-color: #0FF0FC; /* azul claro */
+    background-color: #FFFFFF;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
 }
 
 /* Login social */
@@ -183,7 +201,7 @@
 }
 
 .social-login p {
-    color: var(--neutral-color);
+    color: #FFFFFF;
     margin-bottom: 15px;
     position: relative;
 }
@@ -195,7 +213,7 @@
     top: 50%;
     width: 30%;
     height: 1px;
-    background-color: #ddd;
+    background-color: #FFFFFF;
 }
 
 .social-login p::before {
@@ -219,37 +237,40 @@
     justify-content: center;
     gap: 10px;
     padding: 10px 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #FFFFFF;
     border-radius: 5px;
-    background-color: var(--light-color);
+    background-color: #000000;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #FFFFFF;
 }
 
 .social-btn:hover {
     transform: translateY(-3px);
+    background-color: #00BFFF;
 }
 
 .social-btn.google {
-    color: #DB4437;
+    color: #FFFFFF;
 }
 
 .social-btn.facebook {
-    color: #4267B2;
+    color: #FFFFFF;
 }
 
 /* Nota administrativa */
 .admin-note {
-    background-color: #f8f9fa;
-    border-left: 3px solid var(--primary-color);
+    background-color: #00BFFF;
+    border-left: 3px solid #FFFFFF;
     padding: 15px;
     font-size: 14px;
-    color: var(--neutral-color);
+    color: #FFFFFF;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 .admin-note i {
-    color: var(--primary-color);
+    color: #FFFFFF;
     margin-right: 5px;
 }
 
@@ -258,16 +279,17 @@
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: var(--neutral-color);
+    border-top: 2px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .login-footer p {
     margin-bottom: 10px;
+    color: #FFFFFF;
 }
 
 .trial-link {
-    color: var(--primary-color);
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
 }
@@ -277,7 +299,7 @@
 }
 
 .back-link {
-    color: var(--secondary-color);
+    color: #FFFFFF;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -285,7 +307,10 @@
 }
 
 .back-link:hover {
-    color: var(--primary-color);
+    color: #00BFFF;
+    background-color: #FFFFFF;
+    padding: 0.3rem;
+    border-radius: 5px;
 }
 
 /* Responsividade */
@@ -313,4 +338,53 @@
     .social-login-buttons {
         flex-direction: column;
     }
+}
+
+/* Estilos específicos para inputs de formulário */
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+select {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+select option {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Checkbox personalizado */
+input[type="checkbox"] {
+    accent-color: #00BFFF;
+}
+
+/* Botões gerais */
+button {
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    border: 2px solid #00BFFF;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #00BFFF;
+    border-color: #00BFFF;
+}
+
+/* Links gerais */
+a {
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00BFFF;
+    background-color: #FFFFFF;
+    padding: 0.2rem;
+    border-radius: 3px;
 }

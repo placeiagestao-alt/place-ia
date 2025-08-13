@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000; /* preto bem escuro */
+    color: #00e6ff; /* azul neon */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* Container geral */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 40px;
+    border-bottom: 2px solid #00e6ff;
+    box-shadow: 0 0 10px #00e6ff44 inset;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 3px #00e6ff);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #00e6ff;
+    text-shadow: 0 0 10px #00e6ff88;
+}
+
+.slogan {
+    font-size: 0.9rem;
+    color: #00e6ffaa;
+    font-style: italic;
+}
+
+/* Navegação principal */
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav .nav-item {
+    background: transparent;
+    border: none;
+    color: #00e6ff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 0 5px #00e6ffaa;
+}
+
+.main-nav .nav-item:hover,
+.main-nav .nav-item.active {
+    background-color: #00e6ff;
+    color: #000;
+    box-shadow: 0 0 15px #00e6ff;
+}
+
+/* User profile / login link */
+.user-profile a.login-button-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00e6ff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #00e6ff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 0 0 8px #00e6ffcc;
+}
+
+.user-profile a.login-button-nav:hover {
+    background-color: #00e6ff;
+    color: #000;
+    box-shadow: 0 0 20px #00e6ff;
+}
+
+/* Main content */
+.app-content {
+    margin-top: 40px;
+}
+
+/* Rodapé */
+.app-footer {
+    background-color: #000;
+    border-top: 3px solid #00e6ff;
+    margin-top: 80px;
+    padding: 30px 40px;
+    color: #00e6ffaa;
+    box-shadow: 0 -5px 15px #00e6ff33 inset;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #00e6ff;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px #00e6ffaa;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.social-icon {
+    color: #00e6ff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #00e6ff88;
+    border-top: 1px solid #00e6ff44;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.founder-quote {
+    font-style: italic;
+    color: #00e6ffbb;
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .main-nav {
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
